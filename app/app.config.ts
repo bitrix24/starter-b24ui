@@ -1,4 +1,3 @@
 export default defineAppConfig({
-  // https://bitrix24.github.io/b24ui/getting-started/theme#design-system
-  b24ui: {}
+  // https://bitrix24.github.io/b24ui/guide/getting-started.html
 })
