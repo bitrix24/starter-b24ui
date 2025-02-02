@@ -2,7 +2,12 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  /**
+   * @memo App work under frame
+   * Nuxt DevTools: Failed to check parent window
+   * SecurityError: Failed to read a named property '__NUXT_DEVTOOLS_DISABLE__' from 'Window'
+   */
+  devtools: { enabled: false },
 
   modules: [
     '@bitrix24/b24ui-nuxt',

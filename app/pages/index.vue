@@ -27,5 +27,13 @@ import PlayCircleIcon from '@bitrix24/b24icons-vue/main/PlayCircleIcon'
         target="_blank"
       />
     </div>
+    
+    <B24Button
+      rounded
+      label="Main Page"
+      color="link"
+      depth="dark"
+      to="/main"
+    />
   </div>
 </template>
