@@ -5,7 +5,7 @@
  */
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import type { B24Frame } from '@bitrix24/b24jssdk'
-import { LoggerBrowser, initializeB24Frame, Type, Text } from '@bitrix24/b24jssdk'
+import { LoggerBrowser, Type, Text } from '@bitrix24/b24jssdk'
 import { DateTime } from 'luxon'
 import type { DescriptionListItem } from '@bitrix24/b24ui-nuxt'
 import ArrowToTheLeftIcon from '@bitrix24/b24icons-vue/actions/ArrowToTheLeftIcon'
@@ -22,7 +22,8 @@ const serverTime = ref<DateTime | null>(null);
 
 onMounted(async() => {
 	try {
-		$b24 = await initializeB24Frame()
+		const { $initializeB24Frame } = useNuxtApp()
+		$b24 = await $initializeB24Frame()
 		$b24.setLogger(LoggerBrowser.build('Core', true))
 		
 		await $b24.parent.setTitle('[playground] Testing Frame')
@@ -70,7 +71,7 @@ const itemsActions = computed<DescriptionListItem[]>(() => {
 			label: 'ServerTime',
 			description: 'Need load from server'
 		})
-	// } else if (serverTime.value instanceof DateTime) {
+		// } else if (serverTime.value instanceof DateTime) {
 	} else if (isDateTime(serverTime.value)) {
 		list.push(
 			{
@@ -99,8 +100,8 @@ const itemsActions = computed<DescriptionListItem[]>(() => {
 				:icon="ArrowToTheLeftIcon"
 			/>
 			/ <div class="text-h1">
-				Main page content
-			</div>
+			Main page content
+		</div>
 		</div>
 		<div v-if="!isInit">
 			Loading ...
