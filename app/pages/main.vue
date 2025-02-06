@@ -12,7 +12,7 @@ import ArrowToTheLeftIcon from '@bitrix24/b24icons-vue/actions/ArrowToTheLeftIco
 import Refresh9Icon from '@bitrix24/b24icons-vue/crm/Refresh9Icon'
 
 const $logger = LoggerBrowser.build(
-	'AppVue: Frame',
+	'App: Main',
 	true
 )
 
