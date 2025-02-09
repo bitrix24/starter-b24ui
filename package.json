@@ -14,13 +14,13 @@
   },
   "dependencies": {
     "@bitrix24/b24icons-vue": "^1.0.3",
-    "@bitrix24/b24ui-nuxt": "^0.2.2",
+    "@bitrix24/b24ui-nuxt": "^0.2.3",
     "@bitrix24/b24jssdk-nuxt": "^0.1.1",
     "nuxt": "^3.15.4"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.7.6",
-    "eslint": "^9.19.0",
+    "@nuxt/eslint": "^1.0.1",
+    "eslint": "^9.20.0",
     "typescript": "^5.7.3"
   }
 }
