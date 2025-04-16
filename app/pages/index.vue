@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import PlayCircleIcon from '@bitrix24/b24icons-vue/main/PlayCircleIcon'
+
+useHead({
+  title: 'Bitrix24 UI - Starter'
+})
 </script>
 
 <template>
