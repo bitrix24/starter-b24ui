@@ -18,6 +18,14 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   vite: {
+    server: {
+      // allow incoming requests from this host
+      allowedHosts: [
+        '***.ngrok-free.app'
+      ],
+      // and don't forget CORS, if needed:
+      cors: true
+    },
     plugins: [
       tailwindcss()
     ]
