@@ -7,28 +7,26 @@ useHead({
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center gap-16 h-screen">
-  <h1 class="font-b24-secondary text-h1 sm:text-8xl font-light">
-    Bitrix24 UI - Starter
-  </h1>
-    <div class="flex flex-wrap items-center gap-2">
-    <B24Button
-      rounded
-      label="Documentation"
-      color="ai"
-      :icon="PlayCircleIcon"
-      to="https://bitrix24.github.io/b24ui/guide/installation-nuxt-app.html"
-      target="_blank"
-    />
+  <div class="flex flex-col items-start sm:items-center justify-center gap-[10px] h-[calc(100vh-50px)]">
+    <ProseH1 class="sm:text-8xl font-light">
+      Bitrix24 UI - Starter
+    </ProseH1>
 
-    <B24Button
-      rounded
-      label="GitHub"
-      color="link"
-      depth="dark"
-      to="https://github.com/bitrix24/b24ui"
-      target="_blank"
-    />
+    <div class="flex flex-wrap items-start sm:items-center gap-2">
+      <B24Button
+        label="Documentation"
+        color="air-primary-copilot"
+        :icon="PlayCircleIcon"
+        to="https://bitrix24.github.io/b24ui/guide/installation-nuxt-app.html"
+        target="_blank"
+      />
+
+      <B24Button
+        label="GitHub"
+        color="air-secondary-accent"
+        to="https://github.com/bitrix24/b24ui"
+        target="_blank"
+      />
     </div>
   </div>
 </template>

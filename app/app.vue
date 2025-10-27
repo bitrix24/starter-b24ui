@@ -1,13 +1,18 @@
 <script setup lang="ts">
 useHead({
   bodyAttrs: {
-    class: 'text-base-master dark:text-base-150 bg-base-50 dark:bg-base-dark font-b24-system antialiased',
+    class: 'light',
   }
 })
 </script>
 
 <template>
   <B24App>
-    <NuxtPage />
+    <B24SidebarLayout
+      :use-light-content="false"
+      :b24ui="{ container: 'mt-0' }"
+    >
+      <NuxtPage />
+    </B24SidebarLayout>
   </B24App>
 </template>
