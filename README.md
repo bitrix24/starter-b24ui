@@ -4,7 +4,6 @@ Look at docs to learn more:
 
 - [Nuxt](https://nuxt.com/docs/getting-started/introduction)
 - [@bitrix24/b24ui-nuxt](https://bitrix24.github.io/b24ui/)
-- [@bitrix24/b24style](https://bitrix24.github.io/b24style/)
 - [@bitrix24/b24icons](https://bitrix24.github.io/b24icons/)
 - [@bitrix24/b24jssdk](https://bitrix24.github.io/b24jssdk/)
 

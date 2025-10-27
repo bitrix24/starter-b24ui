@@ -17,7 +17,7 @@ useHead({
         label="Documentation"
         color="air-primary-copilot"
         :icon="PlayCircleIcon"
-        to="https://bitrix24.github.io/b24ui/guide/installation-nuxt-app.html"
+        to="https://bitrix24.github.io/b24ui/docs/getting-started/installation/nuxt/"
         target="_blank"
       />
 
