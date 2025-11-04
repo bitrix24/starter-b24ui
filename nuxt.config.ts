@@ -11,6 +11,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@bitrix24/b24ui-nuxt',
+    // '@bitrix24/b24icons-nuxt',
     // `@bitrix24/b24jssdk-nuxt`,
     '@nuxt/eslint'
   ],
