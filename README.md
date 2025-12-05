@@ -1,28 +1,31 @@
-# Bitrix24 UI Starter
+# Nuxt Starter Template
 
-Look at docs to learn more:
+[![Bitrix24 UI](https://img.shields.io/badge/Made%20with-Bitrix24%20UI-2fc6f6?logo=bitrix24&labelColor=020420)](https://bitrix24.github.io/b24ui/)
 
-- [Nuxt](https://nuxt.com/docs/getting-started/introduction)
-- [@bitrix24/b24ui-nuxt](https://bitrix24.github.io/b24ui/)
+Use this template to get started with [Bitrix24 UI](https://bitrix24.github.io/b24ui/) quickly.
+
+- [Live demo](https://bitrix24.github.io/starter-b24ui/)
+- [@bitrix24/b24ui](https://bitrix24.github.io/b24ui/docs/getting-started/installation/vue/)
 - [@bitrix24/b24icons](https://bitrix24.github.io/b24icons/)
 - [@bitrix24/b24jssdk](https://bitrix24.github.io/b24jssdk/)
+
+> The starter template for Vue is on https://github.com/bitrix24/starter-b24ui-vue.
+
+## Quick Start
+
+```bash [Terminal]
+git clone https://github.com/bitrix24/starter-b24ui.git <project-name>
+cd <project-name>
+pnpm install
+pnpm run dev
+```
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -30,17 +33,7 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm dev
 ```
 
 ## Production
@@ -48,33 +41,13 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

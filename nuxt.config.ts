@@ -1,40 +1,38 @@
-import tailwindcss from '@tailwindcss/vite'
+const extraAllowedHosts = (process?.env.NUXT_ALLOWED_HOSTS?.split(',').map((s: string) => s.trim()).filter(Boolean)) ?? []
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  /**
-   * @memo App work under frame
-   * Nuxt DevTools: Failed to check parent window
-   * SecurityError: Failed to read a named property '__NUXT_DEVTOOLS_DISABLE__' from 'Window'
-   */
-  devtools: { enabled: false },
-
   modules: [
-    '@bitrix24/b24ui-nuxt',
-    // '@bitrix24/b24icons-nuxt',
-    // `@bitrix24/b24jssdk-nuxt`,
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    '@bitrix24/b24ui-nuxt'
   ],
+
+  devtools: {
+    enabled: false
+  },
 
   css: ['~/assets/css/main.css'],
 
+  routeRules: {
+    '/': { prerender: true }
+  },
+
+  compatibilityDate: '2025-01-15',
+
   vite: {
     server: {
-      // allow incoming requests from this host
-      allowedHosts: [
-        '***.ngrok-free.app'
-      ],
-      // and don't forget CORS, if needed:
+      // Fix: "Blocked request. This host is not allowed" when using tunnels like ngrok
+      allowedHosts: [...extraAllowedHosts],
       cors: true
-    },
-    plugins: [
-      tailwindcss()
-    ]
+    }
   },
 
-  future: {
-    compatibilityVersion: 4
-  },
-
-  compatibilityDate: '2024-11-27'
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  }
 })

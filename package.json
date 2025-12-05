@@ -1,26 +1,26 @@
 {
   "name": "starter-b24ui-nuxt",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nuxt dev",
     "build": "nuxt build",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@bitrix24/b24icons-vue": "^2.0.4",
-    "@bitrix24/b24ui-nuxt": "^2.0.9",
-    "nuxt": "^4.2.0"
+    "@bitrix24/b24ui-nuxt": "^2.1.11",
+    "nuxt": "^4.2.1"
   },
   "devDependencies": {
+    "@types/node": "^24.10.1",
     "@nuxt/eslint": "^1.10.0",
     "eslint": "^9.39.1",
-    "typescript": "^5.9.3"
-  }
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.1.5"
+  },
+  "packageManager": "pnpm@10.23.0"
 }

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
-import { createError as createH3Error } from "h3"
+import { createError as createH3Error } from 'h3'
 
 const props = defineProps<{
   error: NuxtError
@@ -32,7 +32,10 @@ console.log(props?.error.message)
 
 <template>
   <B24App>
-    <NuxtLoadingIndicator color="var(--ui-color-accent-main-primary)" :height="2" />
+    <NuxtLoadingIndicator
+      color="var(--ui-color-accent-main-primary)"
+      :height="2"
+    />
 
     <B24SidebarLayout :use-light-content="false">
       <B24Card class="mt-[2px]">
