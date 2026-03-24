@@ -10,7 +10,7 @@
       },
       {
         label: 'Dashboard',
-        to: 'https://bitrix24.github.io/b24ui/docs/components/sidebar-layout/',
+        to: 'https://bitrix24.github.io/templates-dashboard/'
       },
       {
         type: 'separator'
