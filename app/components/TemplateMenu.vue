@@ -11,8 +11,6 @@
       {
         label: 'Dashboard',
         to: 'https://bitrix24.github.io/b24ui/docs/components/sidebar-layout/',
-        disabled: true,
-        slot: 'dashboard'
       },
       {
         type: 'separator'
