@@ -25,7 +25,10 @@ useSeoMeta({
   title,
   description,
   ogTitle: title,
-  ogDescription: description
+  ogDescription: description,
+  ogImage: 'https://bitrix24.github.io/b24ui/assets/templates/nuxt/starter-light.png',
+  twitterImage: 'https://bitrix24.github.io/b24ui/assets/templates/nuxt/starter-light.png',
+  twitterCard: 'summary_large_image'
 })
 
 const tgLink = computed(() => {
