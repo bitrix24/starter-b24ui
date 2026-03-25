@@ -39,11 +39,5 @@
       use-dropdown
       class="truncate"
     />
-
-    <template #dashboard-trailing>
-      <B24Badge size="xs">
-        Soon
-      </B24Badge>
-    </template>
   </B24DropdownMenu>
 </template>
