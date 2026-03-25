@@ -3,12 +3,14 @@ import GitHubIcon from '@bitrix24/b24icons-vue/social/GitHubIcon'
 import Bitrix24Icon from '@bitrix24/b24icons-vue/common-service/Bitrix24Icon'
 import TelegramIcon from '@bitrix24/b24icons-vue/outline/TelegramIcon'
 
+const config = useRuntimeConfig()
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico?v=2' }
+    { rel: 'icon', href: `${config.app.baseURL}favicon.ico?v=2` }
   ],
   htmlAttrs: {
     lang: 'en',
