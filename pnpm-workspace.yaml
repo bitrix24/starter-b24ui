@@ -4,3 +4,7 @@ ignoredBuiltDependencies:
   - esbuild
   - unrs-resolver
   - vue-demi
+# Allow these freshly published versions despite the registry minimumReleaseAge policy
+minimumReleaseAgeExclude:
+  - '@bitrix24/b24ui-nuxt@2.9.0'
+  - eslint@10.6.0
