@@ -1,12 +1,3 @@
-# Explicitly decline running these native postinstall build scripts.
-# pnpm 11 treats unconfigured build scripts as an error under CI; declaring
-# them here keeps `pnpm install` non-interactive and reproducible.
-allowBuilds:
-  '@parcel/watcher': false
-  '@tailwindcss/oxide': false
-  esbuild: false
-  unrs-resolver: false
-  vue-demi: false
 ignoredBuiltDependencies:
   - '@parcel/watcher'
   - '@tailwindcss/oxide'
